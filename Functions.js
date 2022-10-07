@@ -67,6 +67,18 @@ console.log("-----------------------------------------------------");
 */
 
 console.log("------------------exercise_4-------------------------");
+function boundary(n) {
+  if (n >= 20 && n <= 100) {
+    return true;
+  } else if (n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let check = boundary(400);
+console.log("The result is:", check);
 console.log("-----------------------------------------------------");
 
 /* EXERCISE 5
