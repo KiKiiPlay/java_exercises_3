@@ -46,6 +46,20 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_3-------------------------");
+function crazyDiff(num) {
+  let result = null;
+  if (num > 19) {
+    result = (num - 19) * 3;
+  } else if (num < 19) {
+    result = (num - 19) * -1;
+  } else if (num === 19) {
+    result = num - 19;
+  }
+  return result;
+}
+
+let absoluteDiff = crazyDiff(20);
+console.log("Absolute difference is:", absoluteDiff);
 console.log("-----------------------------------------------------");
 
 /* EXERCISE 4
