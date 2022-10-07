@@ -25,7 +25,7 @@ console.log("------------------------------------------------------");
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_2-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 3
@@ -33,14 +33,14 @@ console.log("------------------------------------------------------");
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_3-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_4-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 5
@@ -48,7 +48,7 @@ console.log("------------------------------------------------------");
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_5-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 6
@@ -56,35 +56,35 @@ console.log("------------------------------------------------------");
  HINT: Modulus Operator
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_6-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_7-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_8-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_9-------------------------");
 console.log("------------------------------------------------------");
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-console.log("------------------exercise_1-------------------------");
+console.log("------------------exercise_10-------------------------");
 console.log("------------------------------------------------------");
 
 /* WHEN YOU ARE FINISHED
