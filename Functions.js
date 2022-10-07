@@ -158,6 +158,15 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_9-------------------------");
+function cutString(str4) {
+  let splitStrArr4 = str4.split("");
+  splitStrArr4.pop();
+  splitStrArr4.splice(0, 1);
+  return splitStrArr4.join("");
+}
+
+let someWord = cutString("Vandzsurak");
+console.log(someWord);
 console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 10
@@ -165,6 +174,12 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_10------------------------");
+// function giveMeRandom(n){
+//   let randomArr = null;
+// for(let i = 0; i < n; i++){
+
+// }
+// }
 console.log("-----------------------------------------------------\n");
 
 /* WHEN YOU ARE FINISHED
