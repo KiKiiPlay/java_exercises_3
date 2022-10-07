@@ -174,12 +174,16 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_10------------------------");
-// function giveMeRandom(n){
-//   let randomArr = null;
-// for(let i = 0; i < n; i++){
+function giveMeRandom(n) {
+  let randomArr = [null];
+  for (let i = 0; i < n; i++) {
+    randomArr = randomArr + " " + Math.floor(Math.random() * 10);
+  }
+  return randomArr;
+}
 
-// }
-// }
+let randomNum = giveMeRandom(12);
+console.log(randomNum);
 console.log("-----------------------------------------------------\n");
 
 /* WHEN YOU ARE FINISHED
