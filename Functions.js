@@ -19,14 +19,26 @@ function area(l1, l2) {
 
 let rectangleArea = area(10, 5);
 console.log("The area is:", rectangleArea);
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
 console.log("------------------exercise_2-------------------------");
-console.log("------------------------------------------------------");
+function crazySum(int1, int2) {
+  let totalInt = null;
+  if (int1 === int2) {
+    totalInt = (int1 + int2) * 3;
+  } else {
+    totalInt = int1 + int2;
+  }
+  return totalInt;
+}
+
+let checkInt = crazySum(6, 5);
+console.log("Total is:", checkInt);
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
@@ -34,14 +46,14 @@ console.log("------------------------------------------------------");
 */
 
 console.log("------------------exercise_3-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
 console.log("------------------exercise_4-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
@@ -49,7 +61,7 @@ console.log("------------------------------------------------------");
 */
 
 console.log("------------------exercise_5-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
@@ -57,35 +69,35 @@ console.log("------------------------------------------------------");
 */
 
 console.log("------------------exercise_6-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
 console.log("------------------exercise_7-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
 console.log("------------------exercise_8-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
 console.log("------------------exercise_9-------------------------");
-console.log("------------------------------------------------------");
+console.log("-----------------------------------------------------");
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-console.log("------------------exercise_10-------------------------");
-console.log("------------------------------------------------------");
+console.log("------------------exercise_10------------------------");
+console.log("-----------------------------------------------------");
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
