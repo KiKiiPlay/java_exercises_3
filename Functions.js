@@ -87,6 +87,19 @@ console.log("-----------------------------------------------------");
 */
 
 console.log("------------------exercise_5-------------------------");
+function strivify(str) {
+  const splitStrArr = str.split(" ");
+  if (splitStrArr[0] !== "Strive") {
+    const result1 = "Strive" + " " + str;
+    return result1;
+  } else {
+    return str;
+  }
+}
+
+let someText = strivify("blabla bla");
+console.log(strivify(someText));
+
 console.log("-----------------------------------------------------");
 
 /* EXERCISE 6
