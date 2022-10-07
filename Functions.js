@@ -140,6 +140,17 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_8-------------------------");
+function upperFirst(str3) {
+  const splitStrArr3 = str3.split(" ");
+  const firstWord = splitStrArr3[0];
+  capitaleLetterWord = firstWord.charAt(0).toUpperCase() + firstWord.slice(1);
+  splitStrArr3[0] = capitaleLetterWord;
+  return splitStrArr3.join(" ");
+}
+
+let someString = upperFirst("welcome, my name is Kiril");
+console.log(someString);
+
 console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 9
