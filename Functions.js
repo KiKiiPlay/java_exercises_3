@@ -60,7 +60,7 @@ function crazyDiff(num) {
 
 let absoluteDiff = crazyDiff(20);
 console.log("Absolute difference is:", absoluteDiff);
-console.log("-----------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
@@ -79,7 +79,7 @@ function boundary(n) {
 
 let check = boundary(400);
 console.log("The result is:", check);
-console.log("-----------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
@@ -100,7 +100,7 @@ function strivify(str) {
 let someText = strivify("blabla bla");
 console.log(strivify(someText));
 
-console.log("-----------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
@@ -108,35 +108,53 @@ console.log("-----------------------------------------------------");
 */
 
 console.log("------------------exercise_6-------------------------");
-console.log("-----------------------------------------------------");
+function check3and7(posNum) {
+  if (posNum % 7 === 0 || posNum % 3 === 0) {
+    console.log("Number is accepted!");
+  } else {
+    console.log("Number is declined!");
+  }
+}
+
+check3and7(22);
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
 console.log("------------------exercise_7-------------------------");
-console.log("-----------------------------------------------------");
+function reverseString(str2) {
+  let newArray = "";
+  for (let i = str2.length - 1; i >= 0; i--) {
+    newArray += str2[i];
+  }
+  return newArray;
+}
+let stringToReverse = reverseString("Kiril");
+console.log(stringToReverse);
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
 console.log("------------------exercise_8-------------------------");
-console.log("-----------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
 console.log("------------------exercise_9-------------------------");
-console.log("-----------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
 console.log("------------------exercise_10------------------------");
-console.log("-----------------------------------------------------");
+console.log("-----------------------------------------------------\n");
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
