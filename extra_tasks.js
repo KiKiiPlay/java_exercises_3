@@ -38,7 +38,7 @@ console.log("-----------------------------------------------------\n");
 
 console.log("------------------exercise_2-------------------------");
 
-let shoppingCart = [
+let shoppingCart_total = [
   { price: 1000, name: "Iphone", id: 22075, quantity: 2 },
 
   { price: 500, name: "Airpods", id: 22075, quantity: 1 },
@@ -54,11 +54,7 @@ function shoppingCartTotal(arr) {
   return totalSum;
 }
 
-let myShopping = shoppingCartTotal(
-  shoppingCart,
-  shoppingCart.price,
-  shoppingCart.quantity
-);
+let myShopping = shoppingCartTotal(shoppingCart_total);
 
 console.log("Total amount is:", myShopping);
 console.log("-----------------------------------------------------\n");
@@ -69,6 +65,7 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_3-------------------------");
+function addToShoppingCart() {}
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 4
