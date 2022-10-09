@@ -37,23 +37,29 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_2-------------------------");
-let shoppingCart = [
-  { price: 130, name: "Iphone", id: 22075, quantity: 2 },
-  { price: 130, name: "Iphone", id: 22075, quantity: 2 },
-  { price: 130, name: "Iphone", id: 22075, quantity: 2 },
-];
 
-// TODO: CORRECT THIS TASK AND DO IT TILL THE END!!!
+let shoppingCart = [
+  { price: 1000, name: "Iphone", id: 22075, quantity: 2 },
+
+  { price: 500, name: "Airpods", id: 22075, quantity: 1 },
+
+  { price: 1800, name: "MacBook", id: 22075, quantity: 1 },
+];
 
 function shoppingCartTotal(arr) {
   let totalSum = 0;
-  for (let i = 0; i < arr.length - 1; i++) {
-    totalSum = arr.price[i] * arr.quantity[i];
+  for (let i = 0; i <= arr.length - 1; i++) {
+    totalSum += arr[i].price * arr[i].quantity;
   }
   return totalSum;
 }
 
-let myShopping = shoppingCartTotal(shoppingCart);
+let myShopping = shoppingCartTotal(
+  shoppingCart,
+  shoppingCart.price,
+  shoppingCart.quantity
+);
+
 console.log("Total amount is:", myShopping);
 console.log("-----------------------------------------------------\n");
 
