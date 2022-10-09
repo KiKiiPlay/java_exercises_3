@@ -65,7 +65,36 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_3-------------------------");
-function addToShoppingCart() {}
+let shoppingCart_addition = [
+  { price: 1000, name: "Iphone", id: 22075, quantity: 2 },
+
+  { price: 500, name: "Airpods", id: 21085, quantity: 1 },
+
+  { price: 1800, name: "MacBook", id: 22445, quantity: 1 },
+];
+
+console.log("Cart without added item:", shoppingCart_addition);
+
+let newProduct = {
+  price: 800,
+  name: "appleWatch",
+  id: 90376,
+  quantity: 5,
+};
+
+function addToShoppingCart(arr, newItem) {
+  arr.push(newItem);
+  let quantityOfItems = 0;
+  for (let i = 0; i <= arr.length - 1; i++) {
+    quantityOfItems += arr[i].quantity;
+  }
+  return quantityOfItems;
+}
+
+let totalQuantity = addToShoppingCart(shoppingCart_addition, newProduct);
+
+console.log("Cart with added item:", shoppingCart_addition);
+console.log("Total quantity of items:", totalQuantity);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 4
