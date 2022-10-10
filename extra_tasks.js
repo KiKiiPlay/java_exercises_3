@@ -285,8 +285,21 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_11-------------------------");
+let integer1 = 3;
+let integer2 = 3;
+function matrixGenerator(x, y) {
+  let arr = [];
+  for (let i = 0; i < x; i++) {
+    arr[i] = [];
+    for (let z = 0; z < y; z++) {
+      arr[i][z] = [i, z];
+    }
+    console.log(arr[i]);
+  }
+}
+matrixGenerator(integer1, integer2);
 console.log("-----------------------------------------------------\n");
 
-/* WHEN YOU ARE FINISHED
- Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
-*/
+//  WHEN YOU ARE FINISHED
+//  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+//
