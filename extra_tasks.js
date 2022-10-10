@@ -168,14 +168,14 @@ function loopUntil(integer) {
   while (temp !== 3) {
     let random_num = Math.floor(Math.random() * 9);
     if (random_num > integer) {
-      temp++;
       console.log(`${random_num} > ${integer}`);
+      temp++;
     } else if (random_num === integer) {
-      temp--;
       console.log(`${random_num} === ${integer}`);
+      temp = 0;
     } else if (random_num < integer) {
-      temp--;
       console.log(`${random_num} < ${integer}`);
+      temp = 0;
     }
   }
 }
@@ -188,6 +188,22 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_7-------------------------");
+let notNormalArr = [12, "Hello", "1", 45, 89, "!", 63];
+
+function average(arr) {
+  const onlyNumbers = arr.filter((value) => /^-?\d+\.?\d*$/.test(value));
+  let sum = 0;
+  let averageNum;
+  for (let i = 0; i <= onlyNumbers.length - 1; i++) {
+    sum += parseInt(onlyNumbers[i]);
+  }
+  averageNum = sum / onlyNumbers.length;
+  return averageNum;
+}
+
+let averageArr = average(notNormalArr);
+console.log("Start array:", notNormalArr);
+console.log("Avarage of this array is:", averageArr);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 8
