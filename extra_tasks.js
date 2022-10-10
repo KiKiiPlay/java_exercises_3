@@ -237,6 +237,18 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_9-------------------------");
+let emailContent = "Hello, it is no SCAM, you can be calm!";
+
+function spamCheck(str) {
+  if (str.includes("SPAM") || str.includes("SCAM")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let checkSpam = spamCheck(emailContent);
+console.log("Spam check:", checkSpam);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 10
