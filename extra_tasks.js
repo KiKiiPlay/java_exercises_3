@@ -162,6 +162,25 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_6-------------------------");
+let x = 3;
+function loopUntil(integer) {
+  let temp = 0;
+  while (temp !== 3) {
+    let random_num = Math.floor(Math.random() * 9);
+    if (random_num > integer) {
+      temp++;
+      console.log(`${random_num} > ${integer}`);
+    } else if (random_num === integer) {
+      temp--;
+      console.log(`${random_num} === ${integer}`);
+    } else if (random_num < integer) {
+      temp--;
+      console.log(`${random_num} < ${integer}`);
+    }
+  }
+}
+
+loopUntil(x);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 7
