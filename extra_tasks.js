@@ -135,6 +135,25 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_5-------------------------");
+let shoppingCart_last = [
+  { price: 1000, name: "Iphone", id: 22075, quantity: 2 },
+
+  { price: 500, name: "Airpods", id: 22075, quantity: 1 },
+
+  { price: 1800, name: "MacBook", id: 22075, quantity: 1 },
+
+  { price: 400, name: "Apple pen", id: 76155, quantity: 1 },
+];
+
+function latestShoppingCart(arr) {
+  let lastItem;
+  let arrLenght = arr.length - 1;
+  lastItem = arr[arrLenght];
+  return lastItem;
+}
+
+let lastItemInArr = latestShoppingCart(shoppingCart_last);
+console.log("The last item in an array is:", lastItemInArr);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 6
