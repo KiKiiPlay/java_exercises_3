@@ -103,6 +103,30 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_4-------------------------");
+let shoppingCart_max = [
+  { price: 1000, name: "Iphone", id: 22075, quantity: 2 },
+
+  { price: 500, name: "Airpods", id: 22075, quantity: 1 },
+
+  { price: 1800, name: "MacBook", id: 22075, quantity: 1 },
+
+  { price: 18900, name: "MacBook2", id: 22075, quantity: 1 },
+];
+
+function maxShoppingCart(arr) {
+  let maxPrice = 0;
+  let item;
+  for (let i = 0; i <= arr.length - 1; i++) {
+    if (maxPrice < arr[i].price) {
+      item = arr[i];
+    }
+  }
+  return item;
+}
+
+let expensiveItem = maxShoppingCart(shoppingCart_max);
+
+console.log("The most expensive item is:", expensiveItem);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 5
