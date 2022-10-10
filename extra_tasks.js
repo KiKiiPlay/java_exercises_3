@@ -211,6 +211,24 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_8-------------------------");
+let strArr = ["Hello", "How are you", "lovely", "I would like to ask"];
+function longest(arr) {
+  let index = 0;
+  let temp = 0;
+  let updateArr = [];
+  for (let i = 0; i <= arr.length - 1; i++) {
+    updateArr[i] = arr[i].replace(/ /g, "");
+  }
+  for (let i = 0; i <= updateArr.length - 1; i++) {
+    if (temp < updateArr[i].length) {
+      temp = updateArr[i].length;
+      index = i;
+    }
+  }
+  return index;
+}
+
+console.log("The longest string in array is:", strArr[longest(strArr)]);
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 9
