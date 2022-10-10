@@ -256,6 +256,24 @@ console.log("-----------------------------------------------------\n");
 */
 
 console.log("------------------exercise_10-------------------------");
+const currentDate = new Date();
+const [month, day, year] = [
+  currentDate.getMonth(),
+  currentDate.getDate(),
+  currentDate.getFullYear(),
+];
+
+function dateCalculator(setDate, currentDay) {
+  let difference = currentDay.getTime() - setDate.getTime();
+  let totalDays = Math.ceil(difference / (1000 * 3600 * 24));
+  return totalDays;
+}
+
+const someDay = new Date("December 16, 2021");
+console.log("Current date is:", currentDate);
+console.log("Set date is:", someDay);
+console.log("Date difference is:", dateCalculator(someDay, currentDate));
+
 console.log("-----------------------------------------------------\n");
 
 /* EXTRA 11
